@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Healico — Медицинские решения под ключ</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+    *{box-sizing:border-box;margin:0;padding:0;}
+    body{font-family:'Inter',sans-serif;background:#fff;color:#1a1f36;line-height:1.6;}
+    header{display:flex;align-items:center;justify-content:space-between;background:linear-gradient(to right,#00707a,#38a3a5);padding:20px;position:sticky;top:0;z-index:1000;}
+    .header-left{display:flex;align-items:center;}
+    header img{height:50px;margin-right:15px;}
+    header h1{color:#fff;font-size:1.8em;}
+    .header-right a{background:#38a3a5;color:#fff;padding:10px 16px;text-decoration:none;border-radius:6px;margin-left:10px;font-weight:600;transition:0.3s;}
+    .header-right a:hover{background:#005f73;}
+    .section{position:relative;padding:80px 20px;max-width:1200px;margin:40px auto;overflow:hidden;}
+    .section::before{content:'';position:absolute;inset:0;background-size:cover;background-position:center;filter:brightness(0.4);}
+    .section h2,.section p,.section ul{position:relative;z-index:1;}
+    .section h2{font-size:2.5em;color:#fff;text-align:center;margin-bottom:20px;}
+    .section p,.section ul{color:#f0f0f0;font-size:1.2em;margin-bottom:20px;}
+    ul{padding-left:20px;list-style:disc;}
+    .contact-buttons{text-align:center;margin-top:30px;position:relative;z-index:1;}
+    .contact-buttons a{background:#38a3a5;color:#fff;padding:12px 20px;text-decoration:none;border-radius:8px;margin:8px;display:inline-block;font-weight:600;transition:0.3s;}
+    .contact-buttons a:hover{background:#005f73;}
+    /* Backgrounds */
+    #company::before{background-image:url('icons-bg.jpg');}
+    /* White backgrounds for other sections */
+    #model::before,#process::before,#equipment::before{background:none;}
+    /* Dark text for white sections */
+    #model h2,#model p,#model ul,
+    #process h2,#process p,#process ul,
+    #equipment h2,#equipment p,#equipment ul{color:#1a1f36;}
+    #model h2,#process h2,#equipment h2{color:#00707a;}
+    @media(max-width:768px){header{flex-direction:column;align-items:flex-start;} .header-right{margin-top:10px;} .section{padding:60px 15px;} .section h2{font-size:2em;}}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-left">
+      <img src="logo.png" alt="Healico Logo">
+      <h1>Healico</h1>
+    </div>
+    <div class="header-right">
+      <a href="https://t.me/healico_bot" target="_blank">Telegram</a>
+      <a href="https://wa.me/971000000000" target="_blank">WhatsApp</a>
+    </div>
+  </header>
+
+  <div class="section" id="company">
+    <h2>О компании</h2>
+    <p>Healico — поставщик современного медицинского оборудования. Мы ориентированы на повышение качества жизни и обеспечиваем надёжность, комфорт и поддержку на каждом этапе восстановления.</p>
+  </div>
+
+  <div class="section" id="model">
+    <h2>Почему мы?</h2>
+    <p>Мы ценим ваше время и стремимся к максимальной эффективности. Вместо классического интернет-магазина с бесконечными страницами и фильтрами, вы получаете:</p>
+    <ul>
+      <li>Индивидуальный подход: за вами закрепляется персональный менеджер</li>
+      <li>Глубокое понимание: менеджер поможет разобраться в технических характеристиках</li>
+      <li>Оптимальный выбор: подберёт лучший товар по вашим потребностям</li>
+      <li>Прозрачность: согласует цену и оперативную доставку</li>
+      <li>Надёжность: работаем с крупнейшими мировыми поставщиками</li>
+    </ul>
+    <p>Надёжность, оперативность и индивидуальный сервис — наши ключевые принципы.</p>
+  </div>
+
+  <div class="section" id="process">
+    <h2>Как мы работаем</h2>
+    <p>Мы понимаем, что ваш главный ресурс — это время. Поэтому мы отказались от классического интернет-магазина с бесконечными страницами и фильтрами. Вместо этого за вами закрепляется персональный менеджер, который:</p>
+    <ul>
+      <li>выслушает ваш запрос</li>
+      <li>поможет разобраться в технических характеристиках</li>
+      <li>подберёт оптимальный товар</li>
+      <li>согласует цену и доставку</li>
+    </ul>
+    <p>Просто напишите нам в мессенджер — и мы решим вашу задачу.</p>
+    <div class="contact-buttons">
+      <a href="https://t.me/healico_bot" target="_blank">Telegram</a>
+      <a href="https://wa.me/971000000000" target="_blank">WhatsApp</a>
+    </div>
+  </div>
+
+  <div class="section" id="equipment">
+    <h2>Оборудование, которым мы занимаемся</h2>
+    <ul>
+      <li><strong>Домашний уход:</strong> медицинские кровати, матрасы и подушки, подъёмники, системы безопасности в ванной, кресла и переноски</li>
+      <li><strong>Средства передвижения:</strong> ручные и электрокресла, скутеры, адаптация, стоячие рамы, костыли и ходунки</li>
+      <li><strong>Ортопедическая поддержка:</strong> для позвоночника, плеч, колен, стоп и голеностопа, локтей, кисти и запястья, бедра и ноги</li>
+      <li><strong>Компрессионные изделия:</strong> компрессионные чулки, при лимфедеме, профилактика DVT</li>
+      <li><strong>Респираторная терапия:</strong> кислородная и аэрозольная терапия, снотерапия, отсасывающие аппараты</li>
+      <li><strong>Фитнес и физиотерапия:</strong> тренировки тела и конечностей, электростимуляция, термотерапия, упражнения для шеи и плеч</li>
+      <li><strong>ADL:</strong> уход за полостью рта, аксессуары, слабовидение, помощь при одевании, органайзеры, захваты, столовые приборы, пишущие принадлежности, средства для купания</li>
+      <li><strong>Диабетический уход:</strong> глюкометры, уход за стопами, за ранами, косметика</li>
+      <li><strong>Уход за матерями и детьми:</strong> товары для детей и матерей</li>
+      <li><strong>Уход за ранами:</strong> перевязочные материалы, ленты, повязки, аптечки</li>
+      <li><strong>Уход за кожей:</strong> уход за лицом, косметика, подушки и позиционеры</li>
+      <li><strong>Диагностика:</strong> тонометры, пульсоксиметры, термометры, весы</li>
+      <li><strong>Ортопедическая обувь:</strong> обувь и стельки, включая диабетические модели</li>
+      <li><strong>Гериатрия:</strong> уход в ванной, передвижение, профилактика падений, ADL, упражнения на баланс</li>
+      <li><strong>Паркинсон:</strong> профилактика падений, средства передвижения, уход в ванной</li>
+      <li><strong>Бариатрия:</strong> передвижение и профилактика падений для крупного тела</li>
+      <li><strong>Инсульт:</strong> передвижение, ADL, безопасность в спальне</li>
+      <li><strong>Травмы спинного мозга:</strong> передвижение, уход за ранами, уход за мочевым пузырём</li>
+      <li><strong>Аренда оборудования:</strong> инвалидные кресла, CPM, ходунки, кровати, роллаторы, подъёмники, костыли, электроскутеры</li>
+    </ul>
+  </div>
+</body>
+</html>
